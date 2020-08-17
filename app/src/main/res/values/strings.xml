@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Book App</string>
+    <string name="error_message">An error has occurred. Please try again.</string>
+    <string name="book_cover">book cover</string>
+
+    <string-array name="spinner_array">
+        <item>Combined Print and E-book Fiction</item>
+        <item>Hardcover Fiction</item>
+        <item>Hardcover Nonfiction</item>
+        <item>Trade Fiction Paperback</item>
+        <item>Mass Market Paperback</item>
+        <item>Paperback Nonfiction</item>
+        <item>Hardcover Graphic Books</item>
+        <item>Paperback Graphic Books</item>
+    </string-array>
+</resources>

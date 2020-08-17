@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="book"
+            type="com.alexanderdimaris.bookapiapp.model.Book" />
+
+        <variable
+            name="imageUrl"
+            type="String" />
+    </data>
+
+    <ScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".BookDetailActivity">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{book.title}"
+                android:textSize="24sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{book.author}"
+                android:textSize="24sp"
+                android:padding="10dp" />
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="550dp"
+                android:contentDescription="@string/book_cover"
+                app:profileImage="@{imageUrl}"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{book.description}"
+                android:textSize="20sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{book.amazonUrl}"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:autoLink="web"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
+
+
+
